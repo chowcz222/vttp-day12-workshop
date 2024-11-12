@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate</title>
+</head>
+<body>
+
+    <h1>Hello <span data-th-text="${name}"></span></h1>
+
+    <h1>This is your <span data-th-text="${count}"></span> lucky numbers:</h1>
+
+    <table>
+        <tr data-th-each="img:${imgsrc}">
+            <img data-th-src="${img.imglink}" style="height:300px">
+        </tr>
+    </table>
+
+    
+    
+</body>
+</html>
